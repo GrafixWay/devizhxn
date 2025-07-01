@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    gap: 10px;
+}
+
+form input{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #585858;
+}
+
+form label{
+    text-transform: uppercase;
+}
+
+.btn{
+    width: 100%;
+    text-transform: uppercase;
+    width: 50%;
+    background-color: #c7c7c7;
+    border: 2px solid #585858;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #ffa3a3;
+}
+
+input:last-child:hover{
+    background-color: black;
+}
