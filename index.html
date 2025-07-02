@@ -20,15 +20,24 @@
             <p>Good Morning!</p>
             <p>Thank you for coming back!</p>
         </div>
-        <div class="input">
-            <label for="email">Your Email</label><input type="email" name="email">
-            <label for="password">Password</label><input type="password" name="password">
-        </div>
-        <div class="forgot_pass">
-            <input type="checkbox" name="remember"><label for="remember">Remember Me?</label>
-            <a href="#">Forgot Password?</a>
-        </div>
-        <button class="login_btn">Login</button>
+
+
+        <form action="">
+            <div class="email_block input">
+                <label for="email">Your Email</label>
+                <input type="email" name="email" placeholder="Enter your email"/>
+            </div>
+            <div class="pass_block input">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter your password"/>
+            </div>
+            <div class="forgot_pass">
+                <input type="checkbox" name="remember"><label for="remember">Remember Me?</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button class="login_btn">Login</button>
+        </form>
+
     </div>
 </body>
 </html>

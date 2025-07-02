@@ -1,7 +1,69 @@
-
-.raleway-<uniquifier> {
+*{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
+    color: white;
 }
+
+body{
+    margin: 79px 118px;
+    background-color: #111822;
+}
+.choose {
+    font-size: 24px;
+    margin: 0 0 115px 0;
+}
+.hello{
+    margin: 0 0 50px 0;
+}
+.hello>p:first-child{
+    font-weight: 500;
+    font-size: 44px;
+}
+.hello>p:last-child{
+    font-weight: 500;
+    font-size: 16px;
+}
+.forgot_pass{
+    font-weight: 300;
+    font-size: 12px;
+    position: relative;
+    width: 466px;
+    height: 75px;
+}
+.forgot_pass a{
+    position: absolute;
+    right: 0;
+}
+.forgot_pass input{
+    position: absolute;
+    left: 0;
+}
+.forgot_pass label{
+    position: absolute;
+    left: 15px;
+}
+
+.input label {
+    font-weight: 300;
+    font-size: 12px;
+}
+.input>input{
+    display: block;
+    width: 466px;
+    height: 81px;
+    background-color: #ffffff00;
+}
+.input{
+    width: 466px;
+    height: 81px;
+    margin: 10px 0px;
+    background-color: #FFFFFF40;
+}
+.login_btn{
+    font-size: 16px;
+    width: 465px;
+    height: 63px;
+    background-color: #F38049;
+}
+
