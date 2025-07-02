@@ -13,8 +13,8 @@
 <body>
     <div class="main">
         <div class="choose">
-            <a href="#">Login</a>
-            <a href="#">Register</a>
+            <a href="#" class="choose__link choose__link-active">Login</a>
+            <a href="#" class="choose__link">Register</a>
         </div>
         <div class="hello">
             <p>Good Morning!</p>
@@ -32,7 +32,10 @@
                 <input type="password" name="password" placeholder="Enter your password"/>
             </div>
             <div class="forgot_pass">
-                <input type="checkbox" name="remember"><label for="remember">Remember Me?</label>
+                <div class="">
+                    <input type="checkbox" name="remember">
+                    <label for="remember">Remember Me?</label>
+                </div>
                 <a href="#">Forgot Password?</a>
             </div>
             <button class="login_btn">Login</button>

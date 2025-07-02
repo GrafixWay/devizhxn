@@ -1,17 +1,34 @@
-*{
+body{
+    margin: 79px 118px;
+    background-color: #111822;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     color: white;
 }
 
-body{
-    margin: 79px 118px;
-    background-color: #111822;
+form{
+    max-width: 466px;
 }
 .choose {
     font-size: 24px;
-    margin: 0 0 115px 0;
+    margin: 0px 0 115px 0;
+}
+.choose>a{
+    transition: 0.5s;
+    position: relative;
+}
+.choose__link-active::after{
+    content: '';
+    background-color: #F38049;
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+}
+.choose>a:last-child{
+    margin-left: 53px;
 }
 .hello{
     margin: 0 0 50px 0;
@@ -25,44 +42,43 @@ body{
     font-size: 16px;
 }
 .forgot_pass{
+    display: flex;
     font-weight: 300;
     font-size: 12px;
-    position: relative;
-    width: 466px;
-    height: 75px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
-.forgot_pass a{
-    position: absolute;
-    right: 0;
-}
-.forgot_pass input{
-    position: absolute;
-    left: 0;
-}
-.forgot_pass label{
-    position: absolute;
-    left: 15px;
+
+.forgot_pass div{
+    gap: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .input label {
+    margin-bottom: 10px;
     font-weight: 300;
     font-size: 12px;
 }
 .input>input{
     display: block;
-    width: 466px;
-    height: 81px;
     background-color: #ffffff00;
+    color: white;
+    padding: 8px 0px;
+    width: 100%;
 }
 .input{
-    width: 466px;
+    padding: 10px;
     height: 81px;
     margin: 10px 0px;
     background-color: #FFFFFF40;
 }
 .login_btn{
+    display: block;
+    width: 100%;
     font-size: 16px;
-    width: 465px;
     height: 63px;
     background-color: #F38049;
 }
