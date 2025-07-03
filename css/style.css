@@ -1,11 +1,13 @@
 body{
     margin: 79px 118px;
-    background-color: #111822;
+    background-image: linear-gradient(to right,#111822 55%,transparent),url(../image/Desktop\ -\ 3.png);
+    background-repeat: repeat;
+    background-position: right;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     color: white;
-}
+}    
 
 form{
     max-width: 466px;
@@ -81,5 +83,12 @@ form{
     font-size: 16px;
     height: 63px;
     background-color: #F38049;
+    margin-bottom: 182px;
 }
 
+.logo_text{
+    display: inline;
+    font-size: 33.75px;
+    font-weight: 500;
+    color: #ffffff62;
+}
