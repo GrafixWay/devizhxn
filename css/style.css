@@ -1,8 +1,9 @@
 body{
     margin: 79px 118px;
     background-image: linear-gradient(to right,#111822 55%,transparent),url(../image/Desktop\ -\ 3.png);
-    background-repeat: repeat;
-    background-position: right;
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
+    background-position: right center;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -25,9 +26,14 @@ form{
     background-color: #F38049;
     width: 100%;
     position: absolute;
+    transform:scaleX(0) ;
     height: 2px;
     bottom: -5px;
     left: 0;
+    transition: transform .1s ease-out;
+}
+.choose__link-active:hover::after{
+    transform: scaleX(1) ;
 }
 .choose>a:last-child{
     margin-left: 53px;
@@ -58,6 +64,27 @@ form{
     display: flex;
     align-items: center;
 }
+.input{
+    position: relative;
+    padding: 10px;
+    height: 81px;
+    margin: 10px 0px;
+    background-color: #FFFFFF40;
+}
+.input::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #F38049;
+    height: 100%;
+    transform: scaleY(0);
+    transition: transform .2s ease-out;
+    top: 0;
+    left: 0;
+}
+.input:hover:before{
+    transform: scaleY(1);
+}
 
 .input label {
     margin-bottom: 10px;
@@ -71,12 +98,7 @@ form{
     padding: 8px 0px;
     width: 100%;
 }
-.input{
-    padding: 10px;
-    height: 81px;
-    margin: 10px 0px;
-    background-color: #FFFFFF40;
-}
+
 .login_btn{
     display: block;
     width: 100%;
@@ -84,6 +106,10 @@ form{
     height: 63px;
     background-color: #F38049;
     margin-bottom: 182px;
+    transition: background-color .2s ease-out;
+}
+.login_btn:hover{
+    background-color: #f3a079;
 }
 
 .logo_text{
