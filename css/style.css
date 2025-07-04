@@ -63,7 +63,37 @@ form{
     gap: 5px;
     display: flex;
     align-items: center;
+    position: relative;
 }
+.forgot_pass__checkbox{
+    display: none;
+}
+.forgot_pass__label{
+    padding-left: 25px;
+}
+.forgot_pass>a:hover{
+    text-decoration: underline;
+}
+.forgot_pass__label::before{
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 1px solid #F38049;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    /* transition: background .1s ease-in-out; */
+}
+.forgot_pass__checkbox:checked + .forgot_pass__label::before{
+    content: '';
+    background-image: url(../image/check.png);
+    background-position: 50%;
+}
+
 .input{
     position: relative;
     padding: 10px;
